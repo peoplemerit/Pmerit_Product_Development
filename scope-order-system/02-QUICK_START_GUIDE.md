@@ -1,24 +1,27 @@
 # Scope Order System — Quick Start Guide
 
-**Time to Setup:** 15 minutes
+**Time to Setup:** 30 minutes
 **Prerequisites:** Git repo, Claude Pro subscription, text editor
 
 ---
 
 ## Overview
 
-This guide gets you from zero to a working Scope Order System in 15 minutes.
+This guide gets you from zero to a working Scope Order System in 30 minutes.
 
 ```
 What You'll Have:
 ├── .claude/
 │   ├── CLAUDE.md                ← Claude Code instructions
 │   ├── CLAUDE_WEB_SYNC.md       ← Claude Web sync
+│   ├── SYSTEM_GUIDE.md          ← Complete reference
 │   └── scopes/
-│       └── MASTER_SCOPE.md      ← Your project vision
+│       ├── MASTER_SCOPE.md      ← Your project vision
+│       └── SCOPE_TEMPLATE.md    ← Template for new scopes
 ├── docs/aados/
 │   ├── STATE.json               ← State tracking
-│   └── GOVERNANCE.md            ← Workflow rules
+│   ├── GOVERNANCE.md            ← Workflow rules
+│   └── TASK_TRACKER.md          ← Task status
 └── Ready to use three-way workflow!
 ```
 
@@ -47,10 +50,14 @@ Copy these files from the templates folder:
 |----------|-------------|
 | `templates/CLAUDE.md` | `.claude/CLAUDE.md` |
 | `templates/CLAUDE_WEB_SYNC.md` | `.claude/CLAUDE_WEB_SYNC.md` |
+| `templates/SYSTEM_GUIDE.md` | `.claude/SYSTEM_GUIDE.md` |
 | `templates/MASTER_SCOPE.md` | `.claude/scopes/MASTER_SCOPE.md` |
+| `templates/SCOPE_TEMPLATE.md` | `.claude/scopes/SCOPE_TEMPLATE.md` |
 | `templates/STATE.json` | `docs/aados/STATE.json` |
 | `templates/GOVERNANCE.md` | `docs/aados/GOVERNANCE.md` |
-| `templates/SYSTEM_GUIDE.md` | `.claude/SYSTEM_GUIDE.md` |
+| `templates/TASK_TRACKER.md` | `docs/aados/TASK_TRACKER.md` |
+
+**Note:** Keep `SCOPE_TEMPLATE.md` in your scopes folder — copy it when creating new feature scopes.
 
 ---
 

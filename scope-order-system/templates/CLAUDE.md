@@ -5,6 +5,20 @@
 
 ---
 
+## CUSTOMIZE THESE VALUES
+
+Before using this file, replace all `[BRACKETED]` placeholders:
+
+| Placeholder | Replace With | Example |
+|-------------|--------------|---------|
+| `[PROJECT NAME]` | Your project name | MyApp |
+| `[PROJECT]` | Short command prefix | MYAPP |
+| `[DATE]` | Today's date | 2025-01-15 |
+
+**After customization, delete this section.**
+
+---
+
 ## TEAM WORKFLOW
 
 ```

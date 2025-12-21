@@ -1,53 +1,38 @@
 {
+  "_CUSTOMIZE": "Replace all [BRACKETED] values with your project details",
+
   "schema_version": "2.0",
   "schema_notes": "Scope Order System v2 - Reality-First Workflow",
 
-  "last_updated": "YYYY-MM-DDTHH:MM:SSZ",
+  "last_updated": "[YYYY-MM-DD]T00:00:00Z",
   "last_updated_by": "claude-code",
 
   "session_number": 1,
-  "last_audit_date": "YYYY-MM-DD",
+  "last_audit_date": "[YYYY-MM-DD]",
 
-  "current_phase": "PHASE_NAME",
-  "phase_name": "Description of current phase",
+  "current_phase": "SETUP",
+  "phase_name": "Initial project setup",
   "phase_status": "in_progress",
 
-  "active_requirement": "REQUIREMENT_ID",
-  "requirement_description": "What we're currently working on",
+  "active_requirement": "SETUP_COMPLETE",
+  "requirement_description": "Complete initial Scope Order System setup",
 
   "scope_order": {
     "version": "2.0",
     "location": ".claude/scopes/",
     "active_scope": null,
-    "scopes": {
-      "SCOPE_FEATURE1": {
-        "status": "empty",
-        "file": ".claude/scopes/SCOPE_FEATURE1.md"
-      },
-      "SCOPE_FEATURE2": {
-        "status": "audited",
-        "file": ".claude/scopes/SCOPE_FEATURE2.md"
-      },
-      "SCOPE_FEATURE3": {
-        "status": "specified",
-        "file": ".claude/scopes/SCOPE_FEATURE3.md"
-      },
-      "SCOPE_FEATURE4": {
-        "status": "implemented",
-        "file": ".claude/scopes/SCOPE_FEATURE4.md"
-      }
-    }
+    "scopes": {}
   },
 
   "environments": {
     "FE": {
       "name": "Frontend",
-      "path": "./frontend",
+      "path": "[./your-frontend-path]",
       "status": "active"
     },
     "BE": {
       "name": "Backend",
-      "path": "./backend",
+      "path": "[./your-backend-path]",
       "status": "active"
     }
   },
@@ -57,14 +42,16 @@
   "recent_changes": [
     {
       "session": 1,
-      "date": "YYYY-MM-DD",
+      "date": "[YYYY-MM-DD]",
       "change": "Initial setup",
       "impact": "Created Scope Order structure"
     }
   ],
 
   "next_actions": [
-    "Choose first scope to work on",
+    "Customize all [BRACKETED] values",
+    "Fill out MASTER_SCOPE.md",
+    "Create first scope file",
     "Run AUDIT SCOPE: [name]"
   ]
 }

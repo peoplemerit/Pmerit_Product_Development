@@ -50,6 +50,7 @@ A hierarchical documentation system that enables focused context loading with **
 
 ```
 1. DIRECTOR: Create empty SCOPE_[NAME].md → commit
+   —OR— Prompt CLAUDE CODE directly for Step 2 (skipping Step 1)
 2. CLAUDE CODE: "AUDIT SCOPE: [NAME]" → reality report
 3. DIRECTOR → CLAUDE WEB: Share audit report
 4. CLAUDE WEB + DIRECTOR: Brainstorm based on facts
@@ -59,6 +60,8 @@ A hierarchical documentation system that enables focused context loading with **
 8. CLAUDE CODE: Update RESEARCH_FINDINGS
 9. REPEAT
 ```
+
+**Note:** Step 1 is optional when Claude Code is available. Use it as fallback for manual workflow.
 
 ### Benefits
 

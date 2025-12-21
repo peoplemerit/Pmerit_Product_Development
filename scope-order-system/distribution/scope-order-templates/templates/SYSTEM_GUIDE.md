@@ -143,6 +143,7 @@ creates     audits reality   writes specs     implements
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
 │  1. DIRECTOR: Create empty SCOPE_[NAME].md                                   │
+│     —OR— Prompt CLAUDE CODE directly for Step 2 (optional)                   │
 │                          │                                                   │
 │                          ▼                                                   │
 │  2. CLAUDE CODE: "AUDIT SCOPE: [NAME]"                                       │

@@ -42,6 +42,7 @@ Before using this file, replace all `[BRACKETED]` placeholders:
 
 ```
 1. YOU: Create empty SCOPE_[NAME].md, commit to repo
+   —OR— Prompt CLAUDE CODE directly for Step 2 (skipping Step 1)
 2. CLAUDE CODE: Audit reality → populate AUDIT_REPORT section
 3. YOU → CLAUDE WEB: Share audit report
 4. CLAUDE WEB + YOU: Brainstorm, write requirements
@@ -50,6 +51,8 @@ Before using this file, replace all `[BRACKETED]` placeholders:
 7. CLAUDE CODE: Review, recommend, implement → update RESEARCH_FINDINGS
 8. REPEAT until complete
 ```
+
+**Note:** Step 1 is optional when Claude Code is available. Use it as fallback for manual Claude Web workflow.
 
 ### Scope Commands
 

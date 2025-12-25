@@ -54,6 +54,8 @@ Use your Amazon order confirmation email to verify your purchase.
 1. [Introduction](#introduction)
 2. [Part I: The Problem and Solution](#part-i-the-problem-and-solution)
 3. [Part II: AIXORD Principles](#part-ii-aixord-principles)
+   - [Authority Rules (Critical)](#authority-rules-critical)
+   - [AIXORD Power Rules](#aixord-power-rules-memorize-these)
 4. [Part III: Complete Setup Guide](#part-iii-complete-setup-guide)
 5. [Part IV: Living Documents System](#part-iv-living-documents-system)
 6. [Part V: Template Reference](#part-v-template-reference)
@@ -158,6 +160,15 @@ Developers using AI assistants face critical challenges:
 
 A **methodology + template pack** that creates structured execution orders between you and your AI assistants.
 
+### The System Equation
+
+> **MASTER_SCOPE = Project_Docs = All_SCOPEs = Production-Ready, Functioning System**
+
+This is the core invariant of AIXORD:
+- **If it's not documented, it doesn't exist.**
+- Documents are not artifacts that *describe* the system — they *are* the authoritative representation of the system.
+- Your vision and objectives must be on paper before you start, with the understanding that they may evolve during the process.
+
 ### How AIXORD Differs from Prompts
 
 | Prompt | AIXORD |
@@ -187,6 +198,14 @@ AIXORD (Reality-First):
 | Claude Web (Architect) | Strategy, Brainstorming, Specifications |
 | You (Director) | Decisions, Approvals, Coordination |
 | Claude Code (Implementer) | Execution, Quality Review, Implementation |
+
+### Role Transition Rule
+
+> During brainstorming, research, and specification, the AI operates as an **analyst and architect**.
+> Once decisions are approved, the AI transitions into **execution authority** and issues explicit instructions for the human operator to carry out.
+> At this stage, instructions are not suggestions, and execution proceeds sequentially with confirmation gates.
+
+**The human decides *what* should be done; the AI decides *how* it is executed.**
 
 ### Hierarchical Scope Management
 
@@ -270,6 +289,74 @@ Session 2: Resumes at Step 6 (not Step 1)
 
 ---
 
+## Authority Rules (Critical)
+
+These rules eliminate ambiguity about who controls what and when:
+
+### Decision Authority vs Execution Authority
+
+| Authority Type | Controlled By | When |
+|----------------|---------------|------|
+| **Decision Authority** | Human (Director) | During brainstorming and specification |
+| **Execution Authority** | AI (Commander) | After decisions are approved |
+
+> **Decisions are frozen before execution begins.**
+> During execution, the AI does not revisit decisions; it only enforces them.
+
+### Execution Discipline
+
+During execution:
+- **One instruction at a time** — No batching
+- **No optimization** — Execute as written
+- **No reinterpretation** — Human discretion does not override execution authority
+
+If an instruction is unclear or incorrect:
+1. Execution halts
+2. Issue is escalated back to decision phase
+3. No workaround is allowed
+
+### Scope Locking Rule
+
+> **All scopes are locked by default.**
+> A scope may only be unlocked when all declared prerequisite scopes are complete and have passed audit verification.
+
+This prevents:
+- Parallel work that violates dependencies
+- Opening scopes prematurely
+- Skipping prerequisite audits
+
+### Completed Task Locking
+
+> **Completion is a locked state, not a feeling.**
+
+When a scope or task is completed and verified:
+1. It enters a **locked state** in AIXORD_STATE.json
+2. A locked task cannot be modified or reopened without documented prerequisite change
+3. Before reopening, underlying principles and best practices must be re-verified
+
+### Failure Handling Loop
+
+If expected outcome ≠ observed reality:
+1. Execution stops
+2. Evidence is recorded
+3. Findings are documented
+4. System re-enters audit mode
+5. Decisions are updated if required
+6. Affected scopes are re-verified
+
+**Failure is not an error — it is signal.**
+
+### AI Compliance Enforcement
+
+AIXORD is a protocol **imposed on** the AI, not a suggestion for it to follow.
+
+If the AI violates AIXORD rules:
+1. The operator resets context
+2. Governance files are reloaded
+3. Execution resumes only after compliance confirmation
+
+---
+
 ## AIXORD Structure
 
 ### Canonical AIXORD Format
@@ -293,6 +380,7 @@ One clear objective (end condition, not steps)
 2. One action at a time
 3. Explicit confirmation required
 4. No look-ahead or summarization
+5. Instructions issued by AI are derived from approved decisions and are to be executed as written
 
 ## PHASE / STEP
 STEP #: [Action Title]
@@ -308,6 +396,19 @@ Screenshot / log / confirmation
 
 WAIT FOR CONFIRMATION
 ```
+
+---
+
+## AIXORD Power Rules (Memorize These)
+
+These single-sentence rules reinforce the methodology. Post them where you work:
+
+1. **"If it's not documented, it doesn't exist."**
+2. **"Completion is a locked state, not a feeling."**
+3. **"Decisions are frozen before execution begins."**
+4. **"Scopes open only when prerequisites are verified."**
+5. **"Execution enforces decisions; it does not revisit them."**
+6. **"Only one AI may issue execution orders at a time."**
 
 ---
 
@@ -510,6 +611,8 @@ Last Audit: Jan 10
 4. Updates RESEARCH_FINDINGS
 5. Records decisions in DECISION LOG
 
+> **Note:** After specifications are finalized, Claude Code switches from advisory mode to instruction mode and issues step-by-step execution orders.
+
 **Result:** Feature implemented, documented
 
 ### Day 4: Completion
@@ -522,6 +625,13 @@ Last Audit: Jan 10
 3. Prompts for archive cleanup
 
 **Result:** Feature protected, docs cleaned
+
+### Dependency Example
+
+Because AUTH is a prerequisite for PAYMENTS:
+- The PAYMENTS scope **remains locked** until AUTH passes audit and is marked production-ready
+- You cannot open PAYMENTS prematurely, even "just to look"
+- Scopes open only when prerequisites are verified
 
 ---
 
@@ -626,7 +736,13 @@ RELOCK: path/to/file.js
 
 ## Q: What if the AI ignores the AIXORD rules?
 
-**A:** Remind it: "You are operating under AIXORD protocol. Sequential execution only. Wait for my confirmation before proceeding."
+**A:** AIXORD is a protocol imposed on the AI, not a suggestion. If the AI violates rules:
+1. Reset the context (new session or reload governance files)
+2. Re-upload CLAUDE.md and AIXORD_STATE.json
+3. State explicitly: "You are operating under AIXORD protocol. Sequential execution only. Wait for my confirmation before proceeding."
+4. Resume only after the AI confirms compliance
+
+The human enforces compliance by controlling context.
 
 ---
 

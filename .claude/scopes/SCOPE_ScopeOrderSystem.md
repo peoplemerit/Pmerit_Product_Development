@@ -1,9 +1,10 @@
 # SCOPE: Scope Order System
 
 ## Status
-- **Phase:** Published
+- **Phase:** Published (v1), v3.0 in Development
 - **Created:** December 2025
 - **Published:** December 14, 2025
+- **Location:** `products/scope-order-system/`
 
 ---
 
@@ -81,4 +82,27 @@
 
 ---
 
+## v3.0 Development
+
+**Handoff:** `products/scope-order-system/HANDOFF_SCOPE_ORDER_SYSTEM_v3.md`
+
+### v3.0 Core Changes
+1. Living Documents Architecture (one SCOPE + one HANDOFF per feature)
+2. Decision Log with ACTIVE/NO-GO/EXPERIMENTAL states
+3. Lifecycle-Based Archive system
+4. Archive Cleanup Triggers
+
+### v3.0 Tasks
+- [ ] Update SCOPE_TEMPLATE.md with v3 structure
+- [ ] Update CLAUDE.md with archive rules
+- [ ] Update GOVERNANCE.md with decision states
+- [ ] Update STATE.json schema
+- [ ] Create MANUSCRIPT_ScopeOrderSystem_v3.md (in progress)
+- [ ] Update Quick Start Guide
+- [ ] Update Example Workflow
+- [ ] Test v3 setup in fresh environment
+
+---
+
 *Product launched December 14, 2025*
+*v3.0 development started December 21, 2025*

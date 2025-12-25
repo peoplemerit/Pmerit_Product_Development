@@ -1,7 +1,7 @@
 # PMERIT Product Development — Claude Code Instructions
 
-**Version:** 1.0
-**Updated:** December 14, 2025
+**Version:** 2.0
+**Updated:** December 25, 2025
 **Purpose:** Product design, development, and Amazon launch workflows
 
 ---
@@ -60,6 +60,7 @@ You are the **Product Development Assistant** for PMERIT. Your job is to help:
 | `SCOPE: [product]` | Load product scope |
 | `LAUNCH: [product]` | Start Amazon KDP launch workflow |
 | `BRAINSTORM` | Open brainstorming mode |
+| `PRODUCT STATUS` | Show all products and their phases |
 
 ---
 
@@ -68,18 +69,52 @@ You are the **Product Development Assistant** for PMERIT. Your job is to help:
 ```
 Pmerit_Product_Development/
 ├── .claude/
-│   ├── CLAUDE.md              <- This file
+│   ├── CLAUDE.md                    <- This file
 │   └── scopes/
 │       ├── SCOPE_ScopeOrderSystem.md
-│       ├── SCOPE_TaxAssistant.md
+│       ├── SCOPE_AIForCuriousMinds.md
 │       └── SCOPE_[ProductName].md
-├── Chat-Histories/            <- Brainstorming sessions
-├── [product-name]/            <- Per-product folders
-│   ├── MANUSCRIPT_*.md
-│   ├── templates/
-│   └── distribution/
+│
+├── products/                        <- ALL product folders
+│   ├── scope-order-system/          <- Published product
+│   │   ├── MANUSCRIPT_*.md
+│   │   ├── templates/
+│   │   ├── distribution/
+│   │   └── HANDOFF_*.md
+│   ├── ai-for-curious-minds/        <- Book product
+│   │   ├── MANUSCRIPT_*.md
+│   │   └── *.docx, *.pdf
+│   ├── tax-assistant/               <- Future product
+│   └── legal-assistant/             <- Future product
+│
+├── Chat-Histories/                  <- Brainstorming sessions
+│   ├── Brainstorm/                  <- Active brainstorms
+│   ├── *.md                         <- Session transcripts
+│   └── *.txt                        <- Raw chat exports
+│
+├── docs/
+│   ├── methodology/                 <- Frameworks & concepts
+│   │   ├── AIXORD_FRAMEWORK.md      <- AI Execution Order system
+│   │   └── TIERED_CONSENT_MODEL.md  <- Risk mitigation for services
+│   └── reference/
+│       └── sales/                   <- Platform sales docs (reference)
+│
+├── templates/                       <- Shared product templates
+├── Product-Stock/                   <- Raw assets, images, etc.
 └── README.md
 ```
+
+---
+
+## PRODUCT PORTFOLIO
+
+| Product | Phase | Location |
+|---------|-------|----------|
+| Scope Order System | Published (v1), v3 in dev | `products/scope-order-system/` |
+| AI for Curious Minds | Development (ready for KDP) | `products/ai-for-curious-minds/` |
+| Tax Assistant | Conceptual | `products/tax-assistant/` (future) |
+| Legal Assistant | Conceptual | `products/legal-assistant/` (future) |
+| AIXORD Framework | Conceptual | `docs/methodology/AIXORD_FRAMEWORK.md` |
 
 ---
 
@@ -153,7 +188,21 @@ When creating a new product scope:
 
 ---
 
-## TIERED CONSENT MODEL
+## METHODOLOGY DOCUMENTS
+
+### AIXORD Framework (AI Execution Order)
+
+Location: `docs/methodology/AIXORD_FRAMEWORK.md`
+
+A structured, guardrailed execution order from AI to Human:
+- Sequential action, single-task focus
+- Explicit confirmation required
+- Used for visual platform audits
+- Integrated into PMERIT Platform governance
+
+### Tiered Consent Model
+
+Location: `docs/methodology/TIERED_CONSENT_MODEL.md`
 
 For professional service products (Tax, Legal, etc.):
 
@@ -190,10 +239,9 @@ For products that could be misconstrued as professional advice:
 - Filing on user's behalf
 
 **Positioning Language:**
-- ✅ "Legal Information Guide"
-- ✅ "Document Preparation Assistant"
-- ❌ "AI Lawyer"
-- ❌ "Robot Attorney"
+- "Legal Information Guide"
+- "Document Preparation Assistant"
+- NOT "AI Lawyer" or "Robot Attorney"
 
 ---
 
@@ -217,21 +265,39 @@ All products point back to pmerit.com for:
 
 | Document | Location |
 |----------|----------|
-| Brainstorm Handoff | Chat-Histories/Pmerit_brainstorm_handoff.md |
-| Product Methodology | Chat-Histories/Turning_prompt_engineering_into_product.md |
-| Scope Order System | scope-order-system/ |
+| Brainstorm Sessions | `Chat-Histories/Brainstorm/` |
+| Product Methodology | `Chat-Histories/Turning_prompt_engineering_into_product.md` |
+| AIXORD Framework | `docs/methodology/AIXORD_FRAMEWORK.md` |
+| Tiered Consent Model | `docs/methodology/TIERED_CONSENT_MODEL.md` |
+| Platform Sales Docs | `docs/reference/sales/` |
 
 ---
 
 ## STARTUP PROTOCOL
 
-When starting a session:
+When starting a session with `PRODUCT CONTINUE`:
 
 1. Read this file
-2. Check for active product scope
-3. Review recent Chat-Histories if relevant
-4. Output status and next action
+2. Check for active product scopes in `.claude/scopes/`
+3. Review recent Chat-Histories/Brainstorm/ if relevant
+4. Check products/ for in-progress work
+5. Output status and next action
 
 ---
 
-*PMERIT Product Development Environment v1.0*
+## REPO SEPARATION RULE
+
+This repo is for **PRODUCTS ONLY**. Platform code lives in `pmerit-ai-platform/`.
+
+| This Repo | Platform Repo |
+|-----------|---------------|
+| Manuscripts | Source code |
+| Templates (for sale) | Platform templates |
+| Distribution packages | API workers |
+| Brainstorms | Governance docs |
+| Product scopes | Feature scopes |
+
+---
+
+*PMERIT Product Development Environment v2.0*
+*Updated: December 25, 2025*

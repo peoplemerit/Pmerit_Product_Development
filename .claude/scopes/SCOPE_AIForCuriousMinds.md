@@ -1,10 +1,11 @@
 # SCOPE: AI for Curious Minds
 
 ## Status
-- **Phase:** Development
+- **Phase:** Development (Ready for KDP)
 - **Created:** 2023 (Original Draft)
 - **Updated:** December 14, 2025
 - **ISBN:** 9798317144074
+- **Location:** `products/ai-for-curious-minds/`
 
 ---
 

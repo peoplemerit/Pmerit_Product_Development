@@ -165,31 +165,25 @@ AIXORD (Reality-First):
 
 ### Three-Way Team Structure
 
-```
-┌─────────────┐      ┌─────────────┐      ┌─────────────┐
-│ CLAUDE WEB  │◄────►│     YOU     │◄────►│ CLAUDE CODE │
-│ (Architect) │      │ (Director)  │      │(Implementer)│
-└─────────────┘      └─────────────┘      └─────────────┘
-     │                     │                     │
-     │ Strategy            │ Decisions           │ Execution
-     │ Brainstorming       │ Approvals           │ Quality Review
-     │ Specifications      │ Coordination        │ Implementation
-```
+**CLAUDE WEB (Architect)** <---> **YOU (Director)** <---> **CLAUDE CODE (Implementer)**
+
+| Role | Responsibilities |
+|------|------------------|
+| Claude Web (Architect) | Strategy, Brainstorming, Specifications |
+| You (Director) | Decisions, Approvals, Coordination |
+| Claude Code (Implementer) | Execution, Quality Review, Implementation |
 
 ### Hierarchical Scope Management
 
-```
-MASTER_SCOPE.md          ← Project vision (single source of truth)
-    │
-    ├── SCOPE_AUTH.md        ← Authentication feature
-    │       └── HANDOFF_AUTH.md   ← Linked handoff
-    │
-    ├── SCOPE_DASHBOARD.md   ← Dashboard feature
-    │       └── HANDOFF_DASHBOARD.md
-    │
-    └── SCOPE_PAYMENTS.md    ← Payments feature
-            └── HANDOFF_PAYMENTS.md
-```
+**MASTER_SCOPE.md** — Project vision (single source of truth)
+
+Feature Scopes (each links to a handoff):
+
+| Scope File | Feature | Linked Handoff |
+|------------|---------|----------------|
+| SCOPE_AUTH.md | Authentication | HANDOFF_AUTH.md |
+| SCOPE_DASHBOARD.md | Dashboard | HANDOFF_DASHBOARD.md |
+| SCOPE_PAYMENTS.md | Payments | HANDOFF_PAYMENTS.md |
 
 Each scope contains:
 - **DECISION LOG** — Permanent record (NEVER deleted)
@@ -526,21 +520,11 @@ AIXORD includes a risk mitigation framework for products that might venture into
 
 ## The Three Tiers
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  TIER 1: OPEN ACCESS                                        │
-│  General information, templates, education                  │
-│  No special consent needed                                  │
-├─────────────────────────────────────────────────────────────┤
-│  TIER 2: INFORMED CONSENT ZONE                              │
-│  Edge services with full disclosure                         │
-│  User acknowledges limitations + signs waiver               │
-├─────────────────────────────────────────────────────────────┤
-│  TIER 3: HARD BOUNDARY                                      │
-│  Truly prohibited services                                  │
-│  System blocks regardless of consent                        │
-└─────────────────────────────────────────────────────────────┘
-```
+| Tier | Name | Description | Consent |
+|------|------|-------------|---------|
+| **1** | Open Access | General information, templates, education | None required |
+| **2** | Informed Consent Zone | Edge services with full disclosure | User acknowledges limitations + signs waiver |
+| **3** | Hard Boundary | Truly prohibited services | System blocks regardless of consent |
 
 ## When to Apply
 
@@ -553,11 +537,10 @@ The Tiered Consent Model applies when building:
 
 The consent process itself filters users:
 
-```
-Sophisticated User → Reads disclaimer → Benefits from tool
-         vs.
-Fool → Ignores warnings → BUT: Signed waiver limits liability
-```
+| User Type | Behavior | Outcome |
+|-----------|----------|---------|
+| Sophisticated User | Reads disclaimer | Benefits from tool |
+| Fool | Ignores warnings | BUT: Signed waiver limits liability |
 
 ---
 

@@ -81,6 +81,8 @@ And to you, the reader—thank you for demanding more from your AI tools than ch
 - Appendix B: Variant Picker Decision Tree
 - Appendix C: Glossary
 - Appendix D: Complete Governance Template
+- Appendix E: Pick Your Product
+- Appendix F: Download Your Templates
 
 ---
 
@@ -1144,6 +1146,153 @@ MASTER_SCOPE = Project_Docs = All_SCOPEs = Production-Ready System
 ```
 
 Acknowledge these rules, then ask how you can help.
+
+---
+
+## Appendix E: Pick Your Product
+
+Use this guide to find the right AIXORD template package for your situation.
+
+### Step 1: What's Your Primary AI Platform?
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  What AI do you primarily use?                              │
+├─────────────────────────────────────────────────────────────┤
+│  • Claude (Anthropic)     → Go to Step 2A                   │
+│  • ChatGPT (OpenAI)       → Go to Step 2B                   │
+│  • Gemini (Google)        → Go to Step 2C                   │
+│  • Copilot (Microsoft)    → Download: AIXORD Copilot Pack   │
+│  • Multiple platforms     → Go to Step 2D                   │
+│  • Starting a new project → Download: AIXORD Genesis        │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Step 2A: Claude Users
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  What's your Claude setup?                                  │
+├─────────────────────────────────────────────────────────────┤
+│  • Claude Pro + Claude Code  → AIXORD Claude Pack (Dual)    │
+│  • Claude Pro only           → AIXORD Claude Pack (Pro)     │
+│  • Claude Free               → AIXORD Claude Pack (Free)    │
+│                                or AIXORD Starter            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Step 2B: ChatGPT Users
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  What's your ChatGPT subscription?                          │
+├─────────────────────────────────────────────────────────────┤
+│  • ChatGPT Pro ($200/mo)     → AIXORD ChatGPT Pack (Pro)    │
+│  • ChatGPT Plus ($20/mo)     → AIXORD ChatGPT Pack (Plus)   │
+│  • ChatGPT Free              → AIXORD ChatGPT Pack (Free)   │
+│                                or AIXORD Starter            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Step 2C: Gemini Users
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  What's your Gemini subscription?                           │
+├─────────────────────────────────────────────────────────────┤
+│  • Gemini Advanced           → AIXORD Gemini Pack (Advanced)│
+│  • Gemini Free               → AIXORD Gemini Pack (Free)    │
+│                                or AIXORD Starter            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Step 2D: Multi-Platform / Universal Users
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  What do you need?                                          │
+├─────────────────────────────────────────────────────────────┤
+│  • Starting from scratch     → AIXORD Genesis               │
+│    (idea → full system)                                     │
+│                                                             │
+│  • Simple governance,        → AIXORD Starter               │
+│    any AI platform             (Universal variant)          │
+│                                                             │
+│  • Token tracking +          → AIXORD Builder Bundle        │
+│    proactive handoffs          (Enhanced variant)           │
+│                                                             │
+│  • Everything (all variants, → AIXORD Complete              │
+│    templates, examples)                                     │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Quick Reference Table
+
+| I want to...                          | Download this           |
+|---------------------------------------|-------------------------|
+| Try AIXORD for the first time         | Starter ($4.99)         |
+| Build a project from just an idea     | Genesis ($12.99)        |
+| Use AIXORD with Claude                | Claude Pack ($9.99)     |
+| Use AIXORD with ChatGPT               | ChatGPT Pack ($9.99)    |
+| Use AIXORD with Gemini                | Gemini Pack ($7.99)     |
+| Use AIXORD with Copilot               | Copilot Pack ($4.99)    |
+| Get templates for any platform        | Builder Bundle ($17.99) |
+| Get absolutely everything             | Complete ($29.99)       |
+
+---
+
+## Appendix F: Download Your Templates
+
+As a book owner, you have FREE access to all AIXORD templates.
+
+### Your Access Code
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│              Access Code: AIXORD2025BOOK                    │
+│                                                             │
+│        Enter this code at checkout for FREE download        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Download Links
+
+| Product                | Price  | Your Price | Link                                      |
+|------------------------|--------|------------|-------------------------------------------|
+| AIXORD Starter         | $4.99  | FREE       | https://meritwise0.gumroad.com/l/ryysts   |
+| AIXORD Genesis         | $12.99 | FREE       | https://meritwise0.gumroad.com/l/nlrwyn   |
+| AIXORD Claude Pack     | $9.99  | FREE       | https://meritwise0.gumroad.com/l/zpnjv    |
+| AIXORD ChatGPT Pack    | $9.99  | FREE       | https://meritwise0.gumroad.com/l/jfnzh    |
+| AIXORD Gemini Pack     | $7.99  | FREE       | https://meritwise0.gumroad.com/l/qndnd    |
+| AIXORD Copilot Pack    | $4.99  | FREE       | https://meritwise0.gumroad.com/l/jctnyh   |
+| AIXORD Builder Bundle  | $17.99 | FREE       | https://meritwise0.gumroad.com/l/ennzm    |
+| AIXORD Complete        | $29.99 | FREE       | https://meritwise0.gumroad.com/l/xtwqj    |
+
+### How to Download
+
+1. Click any link above (or type into your browser)
+2. Click "I want this!"
+3. Enter code: **AIXORD2025BOOK**
+4. Complete checkout ($0.00)
+5. Download your ZIP file
+6. Extract and start using!
+
+### Recommended First Download
+
+Not sure where to start? Based on your situation:
+
+- **New to AIXORD?** → Download Starter
+- **Have a project idea?** → Download Genesis
+- **Know your AI platform?** → Download that platform's pack
+- **Want everything?** → Download Complete
+
+### Support
+
+Questions about AIXORD? Email: info@pmerit.com
+
+Updates and new versions: pmerit.com
 
 ---
 
